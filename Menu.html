@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Menu | Brew Haven</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    body,
+    html {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .menu-background {
+      background: url('images/bg.jpg') no-repeat center center fixed;
+      background-size: cover;
+      min-height: 100vh;
+      padding-top: 100px;
+      padding-bottom: 60px;
+    }
+
+    .dark-container {
+      background-color: rgba(0, 0, 0, 0.5);
+      border-radius: 16px;
+      padding: 40px 30px;
+      max-width: 1200px;
+      margin: auto;
+      box-shadow: 0 4px 35px rgba(0, 0, 0, 0.7);
+      backdrop-filter: blur(6px);
+    }
+
+    /* Navbar Styles */
+    .navbar-brand {
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      font-size: 2.2rem;
+      font-weight: 700;
+      color: #ffffff !important;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      position: relative;
+      padding: 0 1rem;
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+    }
+
+    .navbar-brand::after {
+      content: '';
+      position: absolute;
+      width: 60%;
+      height: 2px;
+      bottom: 8px;
+      left: 20%;
+      background: #d4a762;
+      transform: scaleX(0);
+      transform-origin: center;
+      transition: transform 0.4s ease;
+    }
+ 
+
+    .navbar {
+      background-color: rgba(0, 0, 0, 0.7);
+      backdrop-filter: blur(5px);
+    }
+
+    .nav-link {
+      color: #e8e8e8 !important;
+      margin-left: 12px;
+      transition: color 0.3s;
+      font-size: medium;
+    }
+
+    .nav-link.active,
+    .nav-link:hover {
+      color: #d4a762 !important;
+    }
+
+    /* Header */
+    header {
+      text-align: center;
+      padding: 30px 20px 10px;
+      color: #f8f3e6;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      text-shadow: 1px 1px 3px rgba(142, 142, 142, 0.5);
+    }
+
+    .tagline {
+      color: #d4a762;
+      font-style: italic;
+      font-size: 1.1rem;
+    }
+
+    .menu-category {
+      max-width: 1200px;
+      margin: auto;
+      margin-bottom: 60px;
+    }
+
+    .menu-category h2 {
+      color: #f5d6b4;
+      font-size: 1.8rem;
+      margin-bottom: 25px;
+      border-left: 5px solid #cba27d;
+      padding-left: 12px;
+      text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.6);
+    }
+
+    .menu-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+    }
+
+    .menu-item {
+      background-color: rgba(0, 0, 0, 0.6);
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+      transition: transform 0.3s, box-shadow 0.3s;
+      color: #e0dcd7;
+      text-align: center;
+      position: relative;
+    }
+
+    .menu-item:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.8);
+    }
+
+    .menu-item img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-bottom: 1px solid #333;
+    }
+
+    .menu-item h3 {
+      font-size: 1.4rem;
+      margin: 15px 10px 10px;
+      color: #fbe2c7;
+    }
+
+    .menu-item p {
+      font-size: 1rem;
+      margin: 0 10px 20px;
+      color: #d8cfc4;
+    }
+
+    .item-label {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      background-color: #029c0c;
+      color: #ffffff;
+      padding: 4px 10px;
+      font-size: 0.75rem;
+      font-weight: bold;
+      border-radius: 8px;
+      text-transform: uppercase;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+      z-index: 2;
+    }
+
+    .line {
+      border: 0;
+      height: 2px;
+      background: linear-gradient(90deg, #ff0000, #00ff00, #0000ff);
+      margin: 40px 0 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fs-4" href="index.html">Brew Haven</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="Contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link active" href="Menu.html">Menu</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Menu Section -->
+  <div class="menu-background">
+    <div class="dark-container">
+      <header>
+        <h1>Brew Haven Menu</h1>
+        <p class="tagline">Savor every sip. Explore our handcrafted brews.</p>
+      </header>
+
+      <!-- Coffee -->
+      <section class="menu-category">
+        <h2>☕ Coffee</h2>
+        <div class="menu-grid">
+          <div class="menu-item">
+            <span class="item-label">Available</span>
+            <a href="sigbrew.html"><img src="images/menu/top-view-female-barista-holding-cup-coffee.jpg" alt="Signature Brew"></a>
+            <h3>Signature Brew</h3>
+            <p>Bold, rich, and perfectly balanced.</p>
+          </div>
+          <div class="menu-item">
+            <img src="images/mocha2.jpg" alt="Mocha Magic">
+            <h3>Mocha Magic</h3>
+            <p>Chocolatey comfort with our finest roast.</p>
+          </div>
+          <div class="menu-item">
+            <img src="images/menu/elegant-cappuccino-rustic-wooden-table-close-up-generated-by-ai.jpg" alt="Espresso">
+            <h3>Espresso Shot</h3>
+            <p>Intense and smooth. A bold jolt of flavor.</p>
+          </div>
+          <div class="menu-item">
+            <span class="item-label">Available</span>
+            <a href="VanillaLatte.html"> <img src="images/menu/homemade-eggnog-with-cinnamon-wooden-table-typical-christmas-dessert.jpg" alt="Vanilla Latte"></a>
+            <h3>Honey Vanilla Latte</h3>
+            <p>Sweet honey meets creamy vanilla.</p>
+          </div>
+        </div>
+      </section>
+
+      <hr class="line">
+
+      <!-- Tea & Herbal -->
+      <section class="menu-category">
+        <h2>🍵 Tea & Herbal</h2>
+        <div class="menu-grid">
+          <div class="menu-item">
+            <img src="images/herbal.jpg" alt="Herbal Escape">
+            <h3>Herbal Escape</h3>
+            <p>Caffeine-free blends for peaceful moments.</p>
+          </div>
+          <div class="menu-item">
+            <span class="item-label">Available</span>
+            <a href="ChaiLatte.html"><img src="images/menu/cup-coffee-with-cinnamon-sticks-marble-background-high-quality-photo.jpg" alt="Chai Latte"></a>
+            <h3>Chai Latte</h3>
+            <p>Spiced black tea with milk and warmth.</p>
+          </div>
+          <div class="menu-item">
+            <img src="images/menu/steaming-cup-matcha.jpg" alt="Green Tea">
+            <h3>Green Zen</h3>
+            <p>Light, earthy, antioxidant-rich tea.</p>
+          </div>
+          <div class="menu-item">
+            <img src="images/menu/high-angle-natural-medicine-concept.jpg" alt="Chamomile">
+            <h3>Chamomile Calm</h3>
+            <p>Floral infusion to soothe your soul.</p>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

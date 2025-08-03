@@ -1,0 +1,217 @@
+@charset "utf-8";
+.container-fluid {
+    background-image: url("images/bg.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    image-rendering: -webkit-optimize-contrast; 
+	backdrop-filter: blur(30px);
+}
+.container .navbar.navbar-expand-lg.navbar-light.bg-light #navbarSupportedContent1 {
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);  
+    backdrop-filter: blur(10px);
+	
+}
+.navbar.navbar-expand-lg.navbar-light.bg-light #navbarSupportedContent1 .navbar-nav.mr-auto {
+    font-style: italic;
+	
+}
+
+.container-fluid .container .navbar.navbar-expand-lg.navbar-light.bg-light {
+	background:linear-gradient(black,black) 
+}
+.container .navbar.navbar-expand-lg.navbar-light.bg-light .navbar-brand {
+    color: white;
+	 
+}
+ /* brand name */
+.navbar .navbar-brand {
+  color: #fff !important;
+  font-family: 'Playfair Display', serif;  
+  font-size: 1.8rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+}
+
+.navbar .navbar-brand:hover {
+  text-shadow: 0 0 10px #cba27d;
+  transition: 0.3s ease;
+}
+
+.navbar .nav-link {
+  color: white !important;
+  font-style: italic;
+}
+
+.navbar .nav-link.active {
+  color: #cba27d !important;
+}
+
+.navbar .nav-link:hover {
+  color: #cba27d !important;
+  text-shadow: 0 0 10px #cba27d;
+  transition: 0.3s ease;
+}
+.navbar {
+  position: relative;
+  overflow: visible;
+}
+
+.navbar::before {
+  content: "Crafted with Passion";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.5rem;          /* Adjust size */
+  font-weight: 500;
+  font-family:Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
+  color: rgba(255, 255, 255, 0.1);  /* Faint gold-ish color with low opacity */
+  user-select: none;
+  pointer-events: none;
+  
+  z-index: 0;
+}
+
+.navbar .navbar-brand,
+.navbar .navbar-nav {
+  position: relative;
+  z-index: 1;
+}
+
+
+.hero h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3.5rem;
+  font-weight: 500;
+  color: #fff;
+  letter-spacing: 0px;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+	padding-top: 10px 
+}
+.hero p {
+  font-size: 1.2rem;
+  color: #d6cfc7;
+  font-style: italic;
+  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5);
+	padding-bottom: 10px;
+}
+
+/* Card container */
+.card {
+  background-color: rgba(30, 30, 30, 0.8); /* dark transparent effect */
+  color: white;
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover  */
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.7);
+}
+
+ 
+.card-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.card-text {
+  color: #e0dcd7;
+  font-size: 1rem;
+}
+
+ 
+.card .btn {
+  background-color: #cba27d;
+  color: #121212;
+  border: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.card .btn:hover {
+  background-color: #b08968;
+  color: #fff;
+}
+
+.card .btn {
+  display: block;
+  margin: 0 auto;
+}
+
+.card  {
+  height: 95%;
+}
+
+.simple-footer {
+  background: none;
+  padding: 60px 20px;
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-box {
+  background-color: rgba(30, 30, 30, 0.4);  
+  backdrop-filter: blur(6px);
+  border-radius: 16px;
+  padding: 30px;
+  max-width: 700px;
+  width: 100%;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  color: #e0dcd7;
+}
+
+.footer-box h4 {
+  color: #f5d6b4;  
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7), 0 0 10px #cba27d;
+}
+
+
+.footer-box p:first-of-type {
+  font-size: 1.1rem;
+  color: #e0dcd7;
+  font-style: italic;
+  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.6);
+  margin-bottom: 20px;
+}
+
+
+.footer-links {
+  margin: 20px 0;
+}
+
+.footer-links a {
+  color: #e0dcd7;
+  text-decoration: none;
+  margin: 0 12px;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: #cba27d;
+  text-shadow: 0 0 5px #cba27d;
+}
+
+.footer-copy {
+  font-size: 0.9rem;
+  color: #aaa;
+  margin-top: 20px;
+}

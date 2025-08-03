@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Contact | Brew Haven</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: url('images/bg.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #fdfdfd;
+  min-height: 100vh;
+}
+
+/* Navbar */
+.navbar {
+  background-color: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(5px);
+}
+
+.navbar-brand {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #ffffff !important;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  position: relative;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.nav-link {
+  color: #e8e8e8 !important;
+  margin-left: 6px;
+  transition: color 0.3s;
+}
+
+.nav-link.active,
+.nav-link:hover {
+  color: #d4a762 !important;
+}
+
+/* Contact Section */
+.full-height-section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 100px; /* for navbar offset */
+  padding-bottom: 0;   /* removed bottom padding to remove gap */
+}
+
+.contact-box {
+  position: relative;  
+  background-color: rgba(39, 39, 39, 0.6);
+  backdrop-filter: blur(6px);
+  padding: 30px 20px;
+  border-radius: 16px;
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.7);
+  width: 100%;
+  max-width: 1200px;
+  margin-bottom: 0; /* removed bottom margin */
+}
+
+h2 {
+  font-weight: 600;
+  color: #f5d6b4;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7), 0 0 10px #cba27d;
+}
+
+h5 {
+  color: #cba27d;
+  font-weight: 500;
+}
+
+p {
+  color: #ddd;
+  line-height: 1.6;
+}
+
+.form-label {
+  color: #f8f3e6;
+  font-weight: 500;
+}
+
+.form-control {
+  background-color: rgba(255, 255, 255, 0.08);
+  border: 1px solid #555;
+  color: #fefefe;
+  border-radius: 8px;
+}
+
+.form-control:focus {
+  border-color: #cba27d;
+  box-shadow: 0 0 0 0.2rem rgba(203, 162, 125, 0.25);
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
+}
+
+.btn-custom {
+  background-color: #cba27d;
+  color: #121212;
+  font-weight: bold;
+  border-radius: 10px;
+  padding: 10px 20px;
+  border: none;
+  transition: background-color 0.3s;
+}
+
+.btn-custom:hover {
+  background-color: #a07850;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .contact-box {
+    padding: 25px 15px;
+  }
+}
+
+/* Quick access icons */
+.icon-container {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 15px;
+  z-index: 10;
+}
+
+.icon-container a img {
+  width: 30px;
+  height: 30px;
+  transition: transform 0.3s ease;
+  filter: invert(1);
+}
+
+.icon-container a img:hover {
+  transform: scale(1.2);
+}
+
+/* Footer */
+.simple-footer {
+  background: none;
+  padding: 10px 5px;
+  margin-top: 0;       
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-box h4 {
+  color: #f5d6b4;
+  font-size: 2.2rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7), 0 0 10px #cba27d;
+}
+
+.footer-box p:first-of-type {
+  font-size: 1.1rem;
+  color: #e0dcd7;
+  font-style: italic;
+  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.6);
+  margin-bottom: 40px;
+}
+
+.footer-copy {
+  font-size: 0.9rem;
+  color: #aaa;
+  margin-top: 10px;
+}
+
+  </style>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fs-4" href="index.html">Brew Haven</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link active" href="Contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!--Centered Section -->
+  <section class="full-height-section">
+    <div class="contact-box">
+      <h2 class="text-center mb-4">Contact Us</h2>
+      <p class="text-center mb-4">We’d love to hear from you. Whether it's feedback, inquiries, or just saying hello!</p>
+      <hr class="text-light">
+
+      <div class="row">
+        <div class="col-md-6">
+          <form action="mailto:naji@nsbm.ac.lk" method="POST" enctype="text/plain">
+            <div class="mb-3">
+              <label for="name" class="form-label">Name</label>
+              <input type="text" class="form-control" id="name" required>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Message</label>
+              <textarea class="form-control" id="message" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-custom">Send</button>
+          </form>
+ <div class="icon-container">
+  <a href="https://wa.me/94786042775" target="_blank" title="Chat on WhatsApp">
+    <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/whatsapp.svg" alt="WhatsApp">
+  </a>
+  <a href="mailto:kaveeshakalanka0129@gmail.com" title="Send Email">
+    <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/gmail.svg" alt="Gmail">
+  </a>
+</div>
+
+
+        </div>
+
+        <div class="col-md-6">
+          <h5 class="mb-3">Visit Us</h5>
+          <p>123 Coffee Street<br>Colombo, Sri Lanka<br>+94 11 123 4567</p>
+          <hr class="text-light">
+          <h5 class="mt-4">Opening Hours</h5>
+          <p>Mon - Sat: 8 AM – 9 PM<br>Sunday: 10 AM – 6 PM</p>
+        </div>
+      </div>
+    </div>
+  </section>
+   <footer class="simple-footer">
+        <div class="footer-box">
+            <h4>Brew Haven</h4>
+  <p class="footer-copy">© 2025 Brew Haven. All rights reserved.</p>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About | Brew Haven</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      color: #fdfdfd;
+    }
+
+    /*Nav Bar*/
+.navbar-brand {
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: #ffffff !important;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      position: relative;
+      padding: 0 1rem;
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+    }
+
+    .navbar-brand::after {
+      content: '';
+      position: absolute;
+      width: 60%;
+      height: 2px;
+      bottom: 8px;
+      left: 20%;
+      background: #d4a762;
+      transform: scaleX(0);
+      transform-origin: center;
+      transition: transform 0.4s ease;
+    }
+ 
+
+    .navbar {
+      background-color: rgba(0, 0, 0, 0.7);
+      backdrop-filter: blur(5px);
+    }
+
+    .nav-link {
+      color: #e8e8e8 !important;
+      margin-left: 6px;
+      transition: color 0.3s;
+      font-size:medium;
+    }
+
+    .nav-link.active,
+    .nav-link:hover {
+      color: #d4a762 !important;
+    }
+
+/*background*/
+    .background-section {
+      background: url('images/bg.jpg') no-repeat center center fixed;
+      background-size: cover;
+      min-height: 100vh;
+      padding-top: 100px;
+      padding-bottom: 60px;
+    }
+    
+
+    .overlay-dark {
+      background-color: rgba(0, 0, 0, 0.6);
+      backdrop-filter: blur(3px);
+      min-height: 100%;
+      padding: 60px 20px;
+    }
+
+    .about-section {
+      color: #f8f5f0;
+    }
+
+    .about-section h2 {
+      font-weight: 600;
+       color: #f5d6b4;
+      text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7), 0 0 10px #cba27d;
+    }
+
+    .quote-box {
+      background-color: rgba(255, 255, 255, 0.08);
+      padding: 30px;
+      border-left: 5px solid #cba27d;
+      font-style: italic;
+      margin: 40px 0;
+      border-radius: 8px;
+    }
+
+    .values-list li {
+      margin-bottom: 12px;
+      font-size: 1rem;
+    }
+
+    .rounded-img {
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(255, 255, 255, 0.5);
+    }
+
+    .simple-footer {
+      background: none;
+      padding: 60px 20px;
+      text-align: center;
+      font-family: 'Playfair Display', serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .footer-box h4 {
+      color: #f5d6b4;
+      font-size: 2.2rem;
+      font-weight: 700;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+      text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7), 0 0 10px #cba27d;
+    }
+
+    .footer-box p:first-of-type {
+      font-size: 1.1rem;
+      color: #e0dcd7;
+      font-style: italic;
+      text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.6);
+      margin-bottom: 20px;
+    }
+
+    .footer-copy {
+      font-size: 0.9rem;
+      color: #aaa;
+      margin-top: 20px;
+    }
+    hr{
+        border: 0;
+        height: 2px;
+        background: linear-gradient(90deg, #ff0000, #00ff00, #0000ff);
+        margin: 30px 0;
+        padding-bottom: 0px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navbar  -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top shadow-sm" style="background-color: rgba(0, 0, 0, 0.7); backdrop-filter: blur(5px);">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">Brew Haven</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="Contact.html">Contact</a></li>
+        <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+  <!-- Background and Content Overlay -->
+  <div class="background-section">
+    <div class="overlay-dark">
+      <!-- About Section -->
+      <section class="about-section container py-5">
+        <h2 class="text-center mb-4">About Brew Haven</h2>
+        <p class="text-center">
+          Founded in 2025, Brew Haven is not just a café — it's a community hub for coffee lovers, creators, thinkers, and dreamers.
+          Nestled in a cozy corner of the city, our space is designed to provide warmth, inspiration, and of course, top-tier brews.
+        </p>
+
+        <div class="quote-box text-center mx-auto">
+          “We believe a great cup of coffee can inspire great moments.”
+        </div>
+
+        <div class="row align-items-center mt-5">
+          <div class="col-md-6 mb-4 mb-md-0">
+            <img src="images/About/cafe.jpg" alt="Our Coffee Shop" class="img-fluid rounded-img shadow-sm">
+          </div>
+          <div class="col-md-6">
+            <h4 class="mb-3" style="color: #cba27d;">What Makes Brew Haven Special?</h4>
+            <ul class="values-list">
+              <li>☕ Expertly crafted specialty brews and herbal teas</li>
+              <li>🌿 Locally sourced ingredients and sustainable practices</li>
+              <li>🪑 A cozy, minimalistic environment for study and creativity</li>
+              <li>🤝 Friendly, knowledgeable baristas who love coffee as much as you do</li>
+              <li>🎨 Community events, art showcases, and live music nights</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="mt-5 text-center">
+          <p>Whether you're grabbing a quick espresso or spending an afternoon journaling, Brew Haven is your safe space
+            for great coffee and greater company.</p>
+        </div>
+      </section>
+<hr>
+      <!-- Footer -->
+      <footer class="simple-footer">
+        <div class="footer-box">
+          <h4>Brew Haven</h4>
+          <p>Your cozy escape with the perfect cup of coffee. Crafted with love, served with warmth.</p>
+
+          <p class="footer-copy">© 2025 Brew Haven. All rights reserved.</p>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

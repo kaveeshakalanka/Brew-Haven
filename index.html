@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Brew Haven</title>
+  
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  
+  <!-- Optional: Your custom style.css -->
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+
+  <div class="container-fluid">
+    <div class="container">
+
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand d-flex align-items-center" href="#">
+          <img src="images/logonew.png" alt="Logo" class="rounded-circle img-fluid" style="height: 30px; margin-right: 10px;">
+          <span>Brew Haven</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent1"
+          aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item active"><a class="nav-link" href="index.html"><em>Home</em></a></li>
+            <li class="nav-item"><a class="nav-link" href="About.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="Contact.html"><em>Contact</em></a></li>
+            <li class="nav-item"><a class="nav-link" href="Menu.html">Menu</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- Carousel -->
+      <div id="carouselExampleIndicators1" class="carousel slide" data-bs-ride="carousel" style="background-color: grey;">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block mx-auto img-fluid" src="images/coffee2.jpg" alt="First slide">
+            <div class="carousel-caption">
+              <h5>Awaken Your Senses</h5>
+              <p>Every cup brewed with bold flavor and quiet passion</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="d-block mx-auto img-fluid" src="images/coffee1.jpg" alt="Second slide">
+            <div class="carousel-caption">
+              <h5>Moments That Matter</h5>
+              <p>Unwind, connect, and savor your perfect sip</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="d-block mx-auto img-fluid" src="images/cof2.jpg" alt="Third slide">
+            <div class="carousel-caption">
+              <h5>Crafted for the Soul</h5>
+              <p>Aromatic blends, warm ambiance, unforgettable comfort</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <!-- Hero Section -->
+      <section class="hero my-5">
+        <div class="container text-center">
+          <h1>Welcome to Brew Haven</h1>
+          <p>Your cozy escape with the perfect cup of coffee.</p>
+        </div>
+      </section>
+
+      <!-- Cards -->
+      <div class="row g-4">
+        <div class="col-xl-3 col-md-6">
+          <div class="card h-100">
+            <img class="card-img-top" src="images/sigbrew.jpg" alt="Signature Brew">
+            <div class="card-body text-center">
+              <h5 class="card-title">Signature Brew</h5>
+              <p class="card-text">Bold, rich, and perfectly balanced. The heart of Brew Haven.</p>
+              <a href="Menu.html" class="btn btn-primary">Order Brew</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-md-6">
+          <div class="card h-100">
+            <img class="card-img-top" src="images/latte.jpg" alt="Honey Vanilla Latte">
+            <div class="card-body text-center">
+              <h5 class="card-title">Honey Vanilla Latte</h5>
+              <p class="card-text">A sweet whisper of honey and vanilla in every creamy sip.</p>
+              <a href="Menu.html" class="btn btn-primary">Try it Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-md-6">
+          <div class="card h-100">
+            <img class="card-img-top" src="images/mocha2.jpg" alt="Mocha Magic">
+            <div class="card-body text-center">
+              <h5 class="card-title">Mocha Magic</h5>
+              <p class="card-text">Indulge in chocolatey comfort blended with our finest roast.</p>
+              <a href="Menu.html" class="btn btn-primary">Taste Magic</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-md-6">
+          <div class="card h-100">
+            <img class="card-img-top" src="images/herbal.jpg" alt="Herbal Escape">
+            <div class="card-body text-center">
+              <h5 class="card-title">Herbal Escape</h5>
+              <p class="card-text">A concentrated burst of green flavor, extracted to perfection.</p>
+              <a href="Menu.html" class="btn btn-primary">Sip &amp; Relax</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <footer class="simple-footer mt-5 pt-4 border-top text-center">
+        <h4>Brew Haven</h4>
+        <p>Your cozy escape with the perfect cup of coffee. Crafted with love, served with warmth.</p>
+        <div class="footer-links d-flex justify-content-center gap-3 mb-2">
+          <a href="index.html">Home</a>
+          <a href="About.html">About</a>
+          <a href="Contact.html">Contact</a>
+          <a href="Menu.html">Menu</a>
+        </div>
+        <p class="footer-copy">© 2025 Brew Haven. All rights reserved.</p>
+      </footer>
+
+    </div>
+  </div>
+
+  <!-- Bootstrap Bundle JS (includes Popper) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
